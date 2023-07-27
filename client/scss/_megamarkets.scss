@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu Light', 'Century Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #050505;
+}
+
+body {
+  padding-top: 4em;
+}
+
+.outerBox {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $p1;
+  box-shadow: $highShadow;
+  border-radius: 5px;
+  border: $lightBorder;
+  background-color: rgb(36, 197, 194);
+}
+
+.innerbox {
+  padding: $p1;
+  width: 95%;
+  margin: $p1 auto;
+  box-shadow: $plainShadow;
+  border: $lightBorder;
+  background-color: whitesmoke;
+}
+
+.displayBox {
+  overflow: auto;
+  padding-top: $p1;
+  background-color: whitesmoke;
+}
+
+.allFriends {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.primary { background-color: $primary; }
+.secondary { background-color: $secondary; }
+
+.marketBox {
+  padding: $p0;
+  margin: $p0;
+  font-size: .8em;
+  border: $lightBorder;
+  box-shadow: $plainShadow;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+#header {
+  text-align: center;
+  letter-spacing: .2em;
+  margin-bottom: $p1;
+}
+
+#totals {
+  line-height: 1.5em;
+}
+
+input {
+  margin: $p1;
+}
+
+button {
+  min-width: 4em;
+  padding: 0.4em 1em;
+  margin: 3px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  &:disabled {
+    background-color: #eee;
+    color: #777;
+  }
+}
+
+.map-container {
+  margin: 0 auto;
+  width: 10%;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
